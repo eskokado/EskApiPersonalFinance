@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Domain", "EskApiPersonalFinance.Domain\EskApiPersonalFinance.Domain.csproj", "{DD547D70-5610-4ED5-B551-6B3EB6101380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Infra.Data", "EskApiPersonalFinance.Infra.Data\EskApiPersonalFinance.Infra.Data.csproj", "{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DD547D70-5610-4ED5-B551-6B3EB6101380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD547D70-5610-4ED5-B551-6B3EB6101380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD547D70-5610-4ED5-B551-6B3EB6101380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{BE16276A-D8F5-4B6B-A013-D2DB260B043B} = {2BA9BD8E-4397-4F59-A2B3-A5E36E0FF080}
 		{75FE74F6-04DB-40E6-B645-A6E31F95571C} = {44E7DFF9-8A57-4BDC-A331-C654EBA3A7C8}
 		{DD547D70-5610-4ED5-B551-6B3EB6101380} = {F37154F5-1866-428D-ACE8-24BE2E8909AC}
+		{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD} = {2D0CB32C-4E68-4A16-A3BC-89624305C196}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {956F088B-11AE-4FA6-B9EB-35A77941FE09}
