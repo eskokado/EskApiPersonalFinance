@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Application", "EskApiPersonalFinance.Application\EskApiPersonalFinance.Application.csproj", "{BE16276A-D8F5-4B6B-A013-D2DB260B043B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Services", "EskApiPersonalFinance.Services\EskApiPersonalFinance.Services.csproj", "{75FE74F6-04DB-40E6-B645-A6E31F95571C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FE74F6-04DB-40E6-B645-A6E31F95571C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FE74F6-04DB-40E6-B645-A6E31F95571C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FE74F6-04DB-40E6-B645-A6E31F95571C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FE74F6-04DB-40E6-B645-A6E31F95571C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +41,7 @@ Global
 		{2D0CB32C-4E68-4A16-A3BC-89624305C196} = {A24E9C2A-0C21-4D0F-A6DD-EA5505444305}
 		{1AAE60C2-8F04-4EF4-9F7B-40AF841C4546} = {A24E9C2A-0C21-4D0F-A6DD-EA5505444305}
 		{BE16276A-D8F5-4B6B-A013-D2DB260B043B} = {2BA9BD8E-4397-4F59-A2B3-A5E36E0FF080}
+		{75FE74F6-04DB-40E6-B645-A6E31F95571C} = {44E7DFF9-8A57-4BDC-A331-C654EBA3A7C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {956F088B-11AE-4FA6-B9EB-35A77941FE09}
