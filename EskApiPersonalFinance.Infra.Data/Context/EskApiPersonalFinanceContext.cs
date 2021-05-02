@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace EskApiPersonalFinance.Infra.Data.Context
 {
-    class EskApiPersonalFinanceContext : DbContext
+    public class EskApiPersonalFinanceContext : DbContext
     {
         public EskApiPersonalFinanceContext()
             : base("EskApiPersonalFinanceDDD")
