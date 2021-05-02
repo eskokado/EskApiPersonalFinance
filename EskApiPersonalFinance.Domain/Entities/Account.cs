@@ -11,13 +11,13 @@ namespace EskApiPersonalFinance.Domain.Entities
 
         public string Number { get; set; }
 
-        public decimal balance { get; set; }
+        public decimal Balance { get; set; }
 
         public int UserId { get; set; }
 
-        public virtual User User { get; }
+        public virtual User User { get; set; }
 
-        public IEnumerable<Launch> launches { get; }
+        public IEnumerable<Launch> Launches { get; }
 
         public bool SpecialAccount(Account account)
         {

@@ -23,6 +23,6 @@ namespace EskApiPersonalFinance.Domain.Entities
 
         public int AccountId { get; set; }
 
-        public virtual Account Account { get; }
+        public virtual Account Account { get; set; }
     }
 }
