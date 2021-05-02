@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EskApiPersonalFinance.Application.ViewModels.Accounts
+namespace EskApiPersonalFinance.Domain.ViewModels.Accounts
 {
     public class AccountViewModelInput
     {

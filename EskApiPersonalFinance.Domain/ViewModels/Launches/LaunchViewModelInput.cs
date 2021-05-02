@@ -2,7 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EskApiPersonalFinance.Application.ViewModels.Launches
+namespace EskApiPersonalFinance.Domain.ViewModels.Launches
 {
     public class LaunchViewModelInput
     {

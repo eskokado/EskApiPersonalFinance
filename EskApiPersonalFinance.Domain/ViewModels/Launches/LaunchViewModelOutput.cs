@@ -1,7 +1,7 @@
 ﻿using EskApiPersonalFinance.Domain.Entities;
 using System;
 
-namespace EskApiPersonalFinance.Application.ViewModels.Launches
+namespace EskApiPersonalFinance.Domain.ViewModels.Launches
 {
     public class LaunchViewModelOutput
     {

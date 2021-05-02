@@ -1,10 +1,6 @@
 ﻿using EskApiPersonalFinance.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace curso_api.Models.Courses
+namespace EskApiPersonalFinance.Domain.ViewModels.Accounts
 {
     public class AccountViewModelOutput
     {
