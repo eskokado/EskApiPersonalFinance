@@ -3,9 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{2BA9BD8E-4397-4F59-A2B3-A5E36E0FF080}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{44E7DFF9-8A57-4BDC-A331-C654EBA3A7C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{F37154F5-1866-428D-ACE8-24BE2E8909AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{A24E9C2A-0C21-4D0F-A6DD-EA5505444305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{2D0CB32C-4E68-4A16-A3BC-89624305C196}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{1AAE60C2-8F04-4EF4-9F7B-40AF841C4546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Application", "EskApiPersonalFinance.Application\EskApiPersonalFinance.Application.csproj", "{BE16276A-D8F5-4B6B-A013-D2DB260B043B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE16276A-D8F5-4B6B-A013-D2DB260B043B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D0CB32C-4E68-4A16-A3BC-89624305C196} = {A24E9C2A-0C21-4D0F-A6DD-EA5505444305}
+		{1AAE60C2-8F04-4EF4-9F7B-40AF841C4546} = {A24E9C2A-0C21-4D0F-A6DD-EA5505444305}
+		{BE16276A-D8F5-4B6B-A013-D2DB260B043B} = {2BA9BD8E-4397-4F59-A2B3-A5E36E0FF080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {956F088B-11AE-4FA6-B9EB-35A77941FE09}
