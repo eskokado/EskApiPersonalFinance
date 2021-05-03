@@ -1,7 +1,7 @@
 ﻿using EskApiPersonalFinance.Domain.Entities;
 using System.Collections.Generic;
 
-namespace EskApiPersonalFinance.Domain.Interfaces
+namespace EskApiPersonalFinance.Domain.Interfaces.Repositories
 {
     public interface ILaunchRepository : IRepositoryBase<Launch>
     {

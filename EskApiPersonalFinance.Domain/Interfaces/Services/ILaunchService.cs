@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EskApiPersonalFinance.Domain.Services
+namespace EskApiPersonalFinance.Domain.Interfaces.Services
 {
     public interface ILaunchService
     {

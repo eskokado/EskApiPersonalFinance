@@ -2,7 +2,7 @@
 using EskApiPersonalFinance.Domain.ViewModels.Users;
 using System.Collections.Generic;
 
-namespace EskApiPersonalFinance.Domain.Services
+namespace EskApiPersonalFinance.Domain.Interfaces.Services
 {
     public interface IAccountService
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EskApiPersonalFinance.Domain.Interfaces
+namespace EskApiPersonalFinance.Domain.Interfaces.Repositories
 {
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
