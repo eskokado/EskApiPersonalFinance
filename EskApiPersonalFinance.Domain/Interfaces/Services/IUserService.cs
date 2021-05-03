@@ -1,17 +1,18 @@
 ﻿using EskApiPersonalFinance.Domain.ViewModels.Users;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace EskApiPersonalFinance.Domain.Interfaces.Services
 {
     public interface IUserService
     {
-        UserViewModelOutput Add(RegisterViewModelInput userModel);
-        UserViewModelOutput Update(int id, RegisterViewModelInput userModel);
+        Task<UserViewModelOutput> Add(RegisterViewModelInput userModel);
+        Task<UserViewModelOutput> Update(int id, RegisterViewModelInput userModel);
         void Remove(int id);
-        IEnumerable<UserViewModelOutput> GetAll();
-        UserViewModelOutput GetById(int id);
-        UserViewModelOutput FindByEmail(string email);
-        UserViewModelOutput FindByUsername(string username);
-        IEnumerable<UserViewModelOutput> FindByName();
+        Task<IEnumerable<UserViewModelOutput>> GetAll();
+        Task<UserViewModelOutput> GetById(int id);
+        Task<UserViewModelOutput> FindByEmail(string email);
+        Task<UserViewModelOutput> FindByUsername(string username);
+        Task<IEnumerable<UserViewModelOutput>> FindByName();
     }
 }
