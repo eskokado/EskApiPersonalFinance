@@ -16,5 +16,10 @@ namespace EskApiPersonalFinance.Infra.Data.Repositories
         {
             return (Account)Db.Accounts.Where(a => a.UserId == userId && a.Agency == agency && a.Number == number);
         }
+
+        public Account FindByAgencyAndNumber(string agency, string number)
+        {
+            return (Account)Db.Accounts.Where(a => a.Agency == agency && a.Number == number);
+        }
     }
 }
