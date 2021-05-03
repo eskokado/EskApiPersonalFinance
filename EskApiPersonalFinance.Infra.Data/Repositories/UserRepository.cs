@@ -9,7 +9,7 @@ namespace EskApiPersonalFinance.Infra.Data.Repositories
     {
         public User FindByEmail(string email)
         {
-            return (User)Db.Users.Where(u => u.Email == email);
+            return (User)Db.Users.Where(u => u.Email == email).FirstOrDefault();
         }
 
         public IEnumerable<User> FindByName(string name)
@@ -19,7 +19,7 @@ namespace EskApiPersonalFinance.Infra.Data.Repositories
 
         public User FindByUsename(string username)
         {
-            return (User)Db.Users.Where(u => u.Username == username);
+            return (User)Db.Users.Where(u => u.Username == username).FirstOrDefault();
         }
     }
 }

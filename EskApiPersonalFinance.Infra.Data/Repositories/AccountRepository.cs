@@ -14,12 +14,12 @@ namespace EskApiPersonalFinance.Infra.Data.Repositories
 
         public Account FindByUserIdAndAgencyAndNumber(int userId, string agency, string number)
         {
-            return (Account)Db.Accounts.Where(a => a.UserId == userId && a.Agency == agency && a.Number == number);
+            return (Account)Db.Accounts.Where(a => a.UserId == userId && a.Agency == agency && a.Number == number).FirstOrDefault();
         }
 
         public Account FindByAgencyAndNumber(string agency, string number)
         {
-            return (Account)Db.Accounts.Where(a => a.Agency == agency && a.Number == number);
+            return (Account)Db.Accounts.Where(a => a.Agency == agency && a.Number == number).FirstOrDefault();
         }
     }
 }
