@@ -15,15 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{1AAE60C2-8F04-4EF4-9F7B-40AF841C4546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Application", "EskApiPersonalFinance.Application\EskApiPersonalFinance.Application.csproj", "{BE16276A-D8F5-4B6B-A013-D2DB260B043B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Application", "EskApiPersonalFinance.Application\EskApiPersonalFinance.Application.csproj", "{BE16276A-D8F5-4B6B-A013-D2DB260B043B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Services", "EskApiPersonalFinance.Services\EskApiPersonalFinance.Services.csproj", "{75FE74F6-04DB-40E6-B645-A6E31F95571C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Services", "EskApiPersonalFinance.Services\EskApiPersonalFinance.Services.csproj", "{75FE74F6-04DB-40E6-B645-A6E31F95571C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Domain", "EskApiPersonalFinance.Domain\EskApiPersonalFinance.Domain.csproj", "{DD547D70-5610-4ED5-B551-6B3EB6101380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Domain", "EskApiPersonalFinance.Domain\EskApiPersonalFinance.Domain.csproj", "{DD547D70-5610-4ED5-B551-6B3EB6101380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Infra.Data", "EskApiPersonalFinance.Infra.Data\EskApiPersonalFinance.Infra.Data.csproj", "{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Infra.Data", "EskApiPersonalFinance.Infra.Data\EskApiPersonalFinance.Infra.Data.csproj", "{C825B9D6-EDC0-4E4F-96DB-E538D35E84AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EskApiPersonalFinance.Infra.CrossCutting", "EskApiPersonalFinance.Infra.CrossCutting\EskApiPersonalFinance.Infra.CrossCutting.csproj", "{0B50C35E-6CED-494D-991E-56C085314975}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Infra.CrossCutting", "EskApiPersonalFinance.Infra.CrossCutting\EskApiPersonalFinance.Infra.CrossCutting.csproj", "{0B50C35E-6CED-494D-991E-56C085314975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

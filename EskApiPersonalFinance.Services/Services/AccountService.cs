@@ -28,7 +28,8 @@ namespace EskApiPersonalFinance.Services.Services
             {
                 Agency = accountModel.Agency,
                 Number = accountModel.Number,
-                Balance = accountModel.Balance
+                Balance = accountModel.Balance,
+                UserId = accountModel.UserId
             };
 
             _accountRepository.Add(accountInsert);
@@ -51,6 +52,7 @@ namespace EskApiPersonalFinance.Services.Services
 
             return accounts.Select(a => new AccountViewModelOutput
             {
+                AccountId = a.AccountId,
                 UserId = a.UserId,
                 Agency = a.Agency,
                 Number = a.Number,
@@ -64,6 +66,7 @@ namespace EskApiPersonalFinance.Services.Services
 
             return new AccountViewModelOutput
             {
+                AccountId = account.AccountId,
                 UserId = account.UserId,
                 Agency = account.Agency,
                 Number = account.Number,
@@ -77,10 +80,11 @@ namespace EskApiPersonalFinance.Services.Services
 
             return accounts.Select(a => new AccountViewModelOutput
             {
+                AccountId = a.AccountId,
                 UserId = a.UserId,
                 Agency = a.Agency,
                 Number = a.Number,
-                Balance = a.Balance
+                Balance = a.Balance                
             });
         }
 
@@ -92,6 +96,7 @@ namespace EskApiPersonalFinance.Services.Services
 
             return new AccountViewModelOutput
             {
+                AccountId = account.AccountId,
                 UserId = account.UserId,
                 Agency = account.Agency,
                 Number = account.Number,
@@ -110,18 +115,13 @@ namespace EskApiPersonalFinance.Services.Services
 
         public AccountViewModelOutput Update(int id, AccountViewModelInput accountModel)
         {
-            var entityAccount = _accountRepository.GetById(id);
-            if (entityAccount == null)
+            var accountUpdate = _accountRepository.GetById(id);
+            if (accountUpdate == null)
                 throw new UnregisteredAccount();
 
-            var accountUpdate = new Account
-            {
-                AccountId = id,
-                Balance = accountModel.Balance,
-                Agency = accountModel.Agency,
-                Number = accountModel.Number,
-                UserId = accountModel.UserId
-            };
+            accountUpdate.Balance = accountModel.Balance;
+            accountUpdate.Agency = accountModel.Agency;
+            accountUpdate.Number = accountModel.Number;
 
             _accountRepository.Update(accountUpdate);
 

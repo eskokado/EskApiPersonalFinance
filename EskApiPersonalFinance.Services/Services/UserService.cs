@@ -119,19 +119,15 @@ namespace EskApiPersonalFinance.Services.Services
 
         public UserViewModelOutput Update(int id, RegisterViewModelInput userModel)
         {
-            var entityUser = _userRepository.GetById(id);
-            if (entityUser == null)
+            var userUpdate = _userRepository.GetById(id);
+            if (userUpdate == null)
                 throw new UnregisteredUser();
 
-            var userUpdate = new User
-            {
-                UserId = id,
-                Name = userModel.Name,
-                Email = userModel.Email,
-                Username = userModel.Username,
-                Password = userModel.Password,
-                Active = false
-            };
+            userUpdate.Name = userModel.Name;
+            userUpdate.Email = userModel.Email;
+            userUpdate.Username = userModel.Username;
+            userUpdate.Password = userModel.Password;
+            userUpdate.Active = false;
 
             _userRepository.Update(userUpdate);
 

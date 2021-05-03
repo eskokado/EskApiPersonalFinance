@@ -20,7 +20,7 @@ namespace EskApiPersonalFinance.Services.Services
         public void Add(LaunchViewModelInput launchModel)
         {
             var launchInsert = new Launch
-            {
+            {                
                 AccountId = launchModel.AccountId,
                 Date = launchModel.Date,
                 LaunchType = launchModel.LaunchType,
@@ -84,18 +84,14 @@ namespace EskApiPersonalFinance.Services.Services
 
         public LaunchViewModelOutput Update(int id, LaunchViewModelInput launchModel)
         {
-            Launch launch = _launchRepository.GetById(id);
-            if (launch == null)
+            Launch launchUpdate = _launchRepository.GetById(id);
+            if (launchUpdate == null)
                 throw new UnregisteredLaunch();
 
-            var launchUpdate = new Launch
-            {
-                LaunchId = id,
-                AccountId = launchModel.AccountId,
-                Date = launchModel.Date,
-                LaunchType = launchModel.LaunchType,
-                Value = launchModel.Value
-            };
+            launchUpdate.AccountId = launchModel.AccountId;
+            launchUpdate.Date = launchModel.Date;
+            launchUpdate.LaunchType = launchModel.LaunchType;
+            launchUpdate.Value = launchModel.Value;
 
             _launchRepository.Update(launchUpdate);
 
