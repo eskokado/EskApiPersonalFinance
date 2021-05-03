@@ -6,8 +6,8 @@ namespace EskApiPersonalFinance.Domain.Interfaces.Services
 {
     public interface IAccountService
     {
-        AccountViewModelOutput Add(RegisterViewModelInput userModel);
-        AccountViewModelOutput Update(int id, RegisterViewModelInput userModel);
+        AccountViewModelOutput Add(AccountViewModelInput accountModel);
+        AccountViewModelOutput Update(int id, AccountViewModelInput accountModel);
         void Remove(int id);
         IEnumerable<AccountViewModelOutput> GetAll();
         AccountViewModelOutput GetById(int id);

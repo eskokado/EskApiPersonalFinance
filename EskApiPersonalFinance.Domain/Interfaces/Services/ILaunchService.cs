@@ -1,15 +1,15 @@
-﻿using EskApiPersonalFinance.Domain.ViewModels.Accounts;
+﻿using EskApiPersonalFinance.Domain.ViewModels.Launches;
 using System.Collections.Generic;
 
 namespace EskApiPersonalFinance.Domain.Interfaces.Services
 {
     public interface ILaunchService
     {
-        AccountViewModelOutput Add(AccountViewModelInput userModel);
-        AccountViewModelOutput Update(int id, AccountViewModelInput userModel);
+        void Add(LaunchViewModelInput launchModel);
+        LaunchViewModelOutput Update(int id, LaunchViewModelInput launchModel);
         void Remove(int id);
-        IEnumerable<AccountViewModelOutput> GetAll();
-        AccountViewModelOutput GetById(int id);
-        IEnumerable<AccountViewModelOutput> FindByAccountIdAndYearAndMonth(int accountId, int year, int month);
+        IEnumerable<LaunchViewModelOutput> GetAll();
+        LaunchViewModelOutput GetById(int id);
+        IEnumerable<LaunchViewModelOutput> FindByAccountIdAndYearAndMonth(int accountId, int year, int month);
     }
 }
