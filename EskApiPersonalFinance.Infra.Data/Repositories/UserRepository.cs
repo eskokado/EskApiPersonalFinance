@@ -1,5 +1,5 @@
 ﻿using EskApiPersonalFinance.Domain.Entities;
-using EskApiPersonalFinance.Domain.Interfaces;
+using EskApiPersonalFinance.Domain.Interfaces.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 

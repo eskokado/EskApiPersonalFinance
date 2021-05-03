@@ -1,4 +1,4 @@
-﻿using EskApiPersonalFinance.Domain.Interfaces;
+﻿using EskApiPersonalFinance.Domain.Interfaces.Repositories;
 using EskApiPersonalFinance.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
