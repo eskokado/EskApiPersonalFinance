@@ -1,4 +1,4 @@
-# What is Personal Finance project?
+# What is API Personal Finance project?
 It's an open source project, written in .NET Core, currently in version 5.0.
 
 The project's goals is to show that is possible to create an architecture more simple than others and using some concepts like DDD (Design Driven Design).
