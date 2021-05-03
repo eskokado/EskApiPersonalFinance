@@ -25,6 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EskApiPersonalFinance.Infra.CrossCutting", "EskApiPersonalFinance.Infra.CrossCutting\EskApiPersonalFinance.Infra.CrossCutting.csproj", "{0B50C35E-6CED-494D-991E-56C085314975}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Item", "Solution Item", "{D4C1578F-E00B-4993-89E1-D0828FD1B43E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
